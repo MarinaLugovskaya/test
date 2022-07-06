@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+  crossorigin="anonymous"
+/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Charm:wght@400;700&family=PT+Sans&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header class="section section-header">
+    <div class="container container--flex">
+
+    <button onclick="show('block')" type="button" class="modal-button">
+    <svg class="header__menu" width="38" height="38">
+      <!-- <use
+        class="header__icon"
+        href="./images/svg/Бургер.svg"
+      ></use> -->
+    </svg>
+    </button>
+    <div id="overlay" onclick="show('none')"></div>
+<div id="modalForm">
+ 
+    <ul class="menu-list list">
+      <li class="menu-item">
+        <a href="https://" class="header-text header-text-current" onclick="show('none')">Главная</a>
+      </li>
+      <li class="menu-item">
+        <a href="#part1" class="header-text">Обо мне</a>
+      </li>
+      <li class="menu-item">
+        <a href="#part2" class="header-text">Мои услуги</a>
+      </li>
+      <li class="menu-item">
+        <a href="#part3" class="header-text">Отзывы</a>
+      </li>
+      <li class="menu-item">
+        <a href="#part4" class="header-text">Результаты</a>
+      </li>
+      <li class="menu-item">
+        <a href="#part5" class="header-text">Кейсы</a>
+      </li>
+    </ul> 
+</div>
+
+<div class="header-box">
+<a class="tel" href="tel:+380977503155">
+<svg width="50" height="50">
+  <use href="./images/svg//Instagram.svg"></use>
+</svg>+380 97 750 3155</a>
+
+<ul class="lang-list list">
+  <li class="header-lang"><a href="https://" class="lang-link">UA</a></li>
+  <li class="header-lang"><a href="https://" class="lang-link">RU</a></li>
+  <li class="header-lang"><a href="https://" class="lang-link">EN</a></li>
+</ul>
+</div>
+</div>
+  </header>
+
+  <main>
+    <div class="cdscdacda">
+    <section class="section-hero-bgc">
+      <div class="container">
+        <div class="info-hero">
+   <h1 class="hero-title">Наталья Малиновская</h1>
+    <p class="hero-text">ТАРГЕТОЛОГ, НАСТАВНИК</p>
+    <p class="hero-txt">Не занимаюсь примитивной настройкой рекламы,  а провожу глубокий маркетинговый аудит после которого реализовываю трафик-систему и выстраиваю с клиентами долгосрочные партнерские отношения</p>
+    <svg width="10" height="16">
+      <use href="./images/svg/стрелка.svg"></use>
+    </svg>
+    
+    <button type="button" class="hero-btn">Связаться со мной</button> 
+  </div>
+
+  <img class="hero-img" src="./images/hero-hght_1x.png" 
+  srcset="./images/hero-hght_1x.png 1x, ./images/hero-hght_2x.png 2x"
+  alt="hightlight"
+  width="401"
+  height="471"> 
+
+  <img class="hero-photo"
+  srcset="./images/hero1xMob.png 1x, ./images/hero2xMob.png 2x"
+  src="./images/hero1xMob.png"
+  alt="Наталья Малиновская"
+  width="327"
+  height="430"
+/>
+  <ul class="hero-social-networks">
+    <li>
+      <a href="">
+        <svg width="20" height="20">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <svg width="20" height="20">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <svg width="20" height="20">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+      </a>
+    </li>
+  </ul>
+  </div>
+</section>
+</div>
+
+  <section class="section section-feature">
+    <div class="container">
+    <h2 class="second-title second-title-absolute">Мои преимущества</h2>
+    <ul class="feature-list list">
+      <li class="feature-item">
+        <svg width="61" height="58" class="feature-svg__1">
+        <use href="./images/svg/clock.svg"></use>
+      </svg>
+      <p class="feature-descr">Честность, дедлайн, ответственность</p>
+      </li>
+
+      <li class="feature-item">
+        <svg width="69" height="67" class="feature-svg__2">
+      </svg>
+      <p class="feature-descr">Глубокое понимание бизнеса, как системы</p>
+      </li>
+
+      <li class="feature-item">
+        <svg width="69" height="60" class="feature-svg__3">
+      </svg>
+      <p class="feature-descr">Знания алгоритма работы Facebook ads</p>
+ </li>
+
+ <li class="feature-item">
+   <svg width="83" height="65" class="feature-svg__4">
+  <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+</svg>
+<p class="feature-descr">Знания в построении воронки продаж</p>
+</li>
+    </ul>
+</div>
+  </section>
+
+  <section class="section section-bcg">
+    <div class="container container-block">
+    <h2 id="part1" class="title-left">Обо мне</h2>
+    <div class="flex-about">
+    <img class="about-me-form"
+    srcset="./images/aboutForm_1x.png 1x, ./images/aboutForm_2x.png 2x"
+    src="./images/aboutForm_1x.png"
+    alt="Наталья Малиновская"
+    width="360"
+    height="340"
+  />
+    <img class="about-me-photo"
+    srcset="./images/aboutMe1xMob.png 1x, ./images/aboutMe1xMob.png 2x"
+    src="./images/aboutMe1xMob.png 1x"
+    alt="Наталья Малиновская"
+    width="222"
+    height="320"
+  />
+  <div class="blur"></div>
+<div class="about-container">
+  <ul class="txt-box">
+    <li class="info-item"><p class="info-text">Таргетолог с опытом работы в продажах более 10 лет</p></li>
+    <li class="info-item"><p class="info-text">Помогаю бизнесам вырасти в доходе с помощью таргетированной рекламы</p></li>
+    <li class="info-item"><p class="info-text">Обучилась таргету у лучших - Терновая, Лыманюк, Скворцов, Мизев, продажи - Ясинский, личное наставничество Черкассова</p></li>
+    <li class="info-item"><p class="info-text">Лучшие кейсы в нишах: инфобизнес, товарный бизнес (инсташопы), недвижимость, строительство и e-commerce</p></li>
+    <li class="info-item"><p class="info-text">Запустила личное наставничество для таргетологов</p></li>
+    <li class="info-item"><p class="info-text">LTV моих клиентов от 8 мес</p></li>
+</ul>
+<p class="info-title-text">МОИ ПРИНЦИПЫ:</p> 
+<p class="info-text">Долгосрочные партнерские отношения. 
+  Талант не нужен - только план, дедлайны и дисциплина.</p>
+</div>
+  </div>
+
+
+<!-- <section class="section section-bcg"> -->
+  <div class="services-block">
+  <div class="title-box">
+    <h3 class="thrd-title">Почему стоит работать со мной?</h3>
+    <div class="frame-box">
+  <p class="interp-text">Потому что я кайфую от того, чем занимаюсь :)</p>
+  <p class="services-title">А так же:</p>
+  <ul class="work-list list">
+    <li class="info-item"><p class="info-text">- Работаю по KPI и беру ответственность за ваш результат</p></li>
+    <li class="info-item"><p class="info-text">- Досконально изучаю ваш бизнес и провожу маркетинговый аудит перед началом работы</p></li>
+    <li class="info-item"><p class="info-text">- Измеряю эффективность работы не кликами, а уровнем окупаемости ваших вложений и показателем вовлеченности в ваш продукт</p></li>
+    <li class="info-item"><p class="info-text">- Знаю последовательный алгоритм действий, как кратно вырасти таргетологу</p></li>
+    <li class="info-item"><p class="info-text">- Выпускаю учеников с доходом от 1200$+</p></li>
+    <li class="info-item"><p class="info-text">- Не исчезаю из поля зрения и всегда с вами на связи</p></li>
+</ul>
+</div>
+</div>
+<div class="services-block-cont">
+    <img
+    class="services-phoneImg"
+    srcset="./images/iPhone1xMob.png 1x, ./images/iPhone2xMob.png 2x"
+    src="./images/iPhone1xMob.png"
+    alt="Наталья Малиновская"
+    width="423"
+    height="352"
+  />
+
+    <p class="social-txt">Подпишись на инстаграм <a href="#" class="thrd-title padding-none">@nmsk_digital</a></p>
+    </div>
+    </div>
+  </section>
+
+  <section class="section section-services-bgc">
+    <div class="container">
+      <div class="services-line-box">
+      <h2 id="part2" class="second-title-line second-title-line-absolut">Мои услуги</h2>
+
+    <ul class="services-list list">
+      <li class="services-item">
+        <div class="services-flexbox">
+        <svg class="services-svg_1">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+        <h3 class="services-title">1. Настройка и ведение таргетированной рекламы </h3>
+        </div>
+        <p class="services-text">-Анализ ниши/конкурентов
+          -Разработка индивидуальной стратегии
+          -Забочусь о ваших расходах и подбираю инструменты исходя из пожеланий и планируемого бюджета
+          -Использую базы ретаргетинга для получения оптимальной цены
+          -Минимальный бюджет для работы - 300$
+          * Стоимость зависит от сложности проекта и обсуждается индивидуально после консультации.
+          </p>
+      </li>
+
+      <li class="services-item">
+        <div class="services-flexbox">
+        <svg width="57" height="46" class="services-svg_2">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+        <h3 class="services-title">2. Консультация + Аудит рекламного кабинета
+          ДЛЯ БИЗНЕСА
+          </h3></div>
+          <p class="services-text">-Вы предоставляете заранее все вопросы, которые хотели бы разобрать на консультации
+            -Связываемся в zoom, длительность 1,5-2 часа 
+            -После консультации вы получаете запись, файл с аудитом и сопровождение в течение 3-х дней 
+            -Подготовка займет 3 рабочих дня с момента согласования
+            * Стоимость - 120$ 
+            </p>
+      </li>
+
+      <li class="services-item">
+        <div class="services-flexbox">
+        <svg width="59" height="46" class="services-svg_3">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+        <h3 class="services-title">3. Консультация  для таргетологов</h3></div>
+        <p class="services-text">-Вы предоставляете заранее все вопросы, которые хотели бы разобрать на консультации
+          -Связываемся в zoom, длительность -1,5 часа
+          -После консультации вы получаете запись и сопровождение в течение 3-х дней 
+          * Стоимость - 90$ 
+          </p>
+      </li>
+
+      <li class="services-item">
+        <div class="services-flexbox">
+        <svg width="47" height="53" class="services-svg_4">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+        <h3 class="services-title">4. Личное наставничество для  таргетологов    </h3></div>
+        <p class="services-text">-Перед началом работы мы с вами созваниваемся и определяем 
+          вашу точку А и желаемую точку B к концу обучения
+          -Прописываем индивидуальный план достижения цели и ваши точки роста
+          
+          Что вы получаете:
+          За время обучения мы разбираем не только то, как эффективно и грамотно работать в facebook ads.
+          Мы охватываем все - от прокачки мышления и изучения базы маркетинга с нуля до продаж своих услуг и создания стратегии своего развития, как специалиста.
+          </p>
+      </li>
+
+
+      <li class="services-item">
+        <div class="services-flexbox">
+        <svg width="40" height="51" class="services-svg_5">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+        <h3 class="services-title">5. Заказать настройку от учеников</h3></div>
+        <p class="services-text">-Условия: Бюджет на 2 недели 100-150$ 
+          * Зависит от ниши
+          -Оплата услуг 100-150$ 
+          * Зависит от опыта специалиста
+          -Перед стартом работы: zoom-созвон, анализ посадочных страниц, аудит рекламного кабинета
+          </p>
+      </li>
+      </ul>
+
+      <button type="button" class="hero-btn">Отправить заявку</button>
+      </div>
+      </div>
+  </section>
+
+  <section class="section section-reviews-bgc">
+    <div class="container container-block">
+      <h2 id="part3" class="second-title title-left">Отзывы</h2>
+  <div class="slider">
+
+    <div class="slider__item">
+      <div class="reviews-container list">
+        <li class="reviews-list">
+      <p class="review-text">Натали, спасибо Вам за ваш профессионализм, за ваш подход к делу. Вы не просто делаете свою работу, вы вникаете в процесс нашей работы и с полной отдачей выдаёте высочайший результат. За год работы с вами мы выросли в продажах и теперь масштабируемся.
+        Я довольна нашим сотрудничеством и трудимся дальше.
+        </p>
+        <p class="reviews-sec-txt">Екатерина
+          руководитель медицинского центра
+          </p>
+    </li>
+    </div>
+    </div>
+  
+    <div class="slider__item">
+      <div class="reviews-container list">
+      <li class="reviews-list">
+        <p class="review-text">Я осталась очень довольна сотрудничеством с Натальей. 
+          Она настроила рекламу на Фейсбук и Инстаграм для нашего интернет-магазина, которая принесла нам сообщения в директ по цене ниже KPI, новых клиентов и конкретные продажи.
+           Вложения в рекламу окупились в конце месяца работы. 
+          Мне было очень приятно работать с вами - объясняли все детально, помогли с продажами и отдельно спасибо за рекомендации по продажам в переписках. Я увидела, что вы человек, на которого можно положиться, я уверенно рекомендую вас как толкового и ответственного таргетолога. 
+          </p>
+          <p class="reviews-sec-txt">Татьяна <br>
+            менеджер магазина постельного белья</p>
+      </li>
+      </div>
+  </div>
+  
+  <div class="slider__item">
+    <div class="reviews-container list">
+  <li class="reviews-list">
+      <p class="review-text">Наталья, благодарю вас за ответственный подход к работе. Мы с партнером вначале  сомневались, так как был негативный опыт с другими таргетологами, но решились довериться вам и не ошиблись, 
+        Спасибо вам! Честно, по делу, всегда на связи и круто, что помогали вести учет лидов.
+        </p>
+        <p class="reviews-sec-txt">Михаил
+          учредитель строительной компании
+         </p>
+    </li>
+    </div>
+  </div>
+  
+  </div>
+<!-- </ul> -->
+</div>
+  </section>
+
+  <section class="section-res-bgc">
+    <div class="container container-block">
+    <h2 id="part4" class="second-title">Результаты учениц после обучения</h2>
+    <ul class="results-list list">
+
+          <li class="res-item1">
+            <img
+            class="img img1"
+            srcset="./images/res1xMob.png 1x, ./images/res2xMob.png 2x"
+            src="./images/res1xMob.png"
+            alt="Анастасия"
+          />
+
+        <img class="circle1"
+        srcset="./images/circle_1xMob.png 1x, ./images/circle_2xMob.png 2x"
+        src="./images/circle_1xMob.png"
+        alt="Ольга"
+      />
+      </li>
+
+
+      <li class="res-item2">
+        <img
+        class="img img2"
+        srcset="./images/res2_1xMob.png 1x, ./images/res2_2xMob.png 2x"
+        src="./images/res2_1xMob.png"
+        alt="Анастасия"
+      />
+
+      <img class="circle2"
+      srcset="./images/circle_1xMob.png 1x, ./images/circle_2xMob.png 2x"
+      src="./images/circle_1xMob.png"
+      alt="Ольга"
+    />
+      </li>
+  
+      <div class="box-hidden">
+        <li>
+        <img
+        class="img img3"
+        srcset="./images/res2_1xMob.png 1x, ./images/res2_2xMob.png 2x"
+        src="./images/res2_1xMob.png"
+        alt="Анастасия"
+      />
+
+      <img
+      class="circle3"
+      srcset="./images/circle_1xMob.png 1x, ./images/circle_2xMob.png 2x"
+      src="./images/circle_1xMob.png"
+      alt="circle"
+    />
+      </li>
+
+
+      <li class="res-item4">
+        <img
+        class="img img4"
+        srcset="./images/res4_1xDesc.png 1x, ./images/res4_2xDesc.png 2x"
+        src="./images/res4_1xDesc"
+        alt="Анастасия"
+        width="152"
+        height="158"
+      />
+
+      <img class="circle4"
+      srcset="./images/circle_1xMob.png 1x, ./images/circle_2xMob.png 2x"
+      src="./images/circle_1xMob.png.png"
+      alt="circle"
+    />
+      </li>
+      </div>
+    </ul>
+    </div>
+    <img class="mountains"
+    srcset="./images/res_1xDesc.png 1x, ./images/res_2xDesc.png 2x"
+    src="./images/res_1xDesc.png"
+    alt="горы"
+    width="2793"
+    height="405"
+  />
+  </section>
+
+  <section class="section section-case-bgc">
+    <div class="container container-block">
+    <h2 id="part5" class="second-title">Кейсы</h2>
+    <ul class="case-list list">
+      <li class="case-container">
+      <!-- <svg width="20" height="20">
+          <use href="./images/icons.svg#icon-instagram2"></use>
+        </svg> -->
+        <p class="case-title">Недвижимость</p>
+        <p class="case-txt">1.1 Привлечение клиентов для продажи коттеджей в Киевской области</p>
+        <p class="sec-txt">✓ За 2 мес. получили 300 лидов по средней цене 4,30$</p>
+        <p class="thrd-txt">* Подробный кейс можно узнать написав мне в личные сообщения
+        </p>
+
+        <p class="case-txt">1.2 Привлечение клиентов для продажи энергодомов в Киеве и области</p>
+        <p class="sec-txt">✓ За месяц получили 610 лидов с сайта  по 1,47$ и 
+          183  лида с лид формы по 0,81$</p>
+        <p class="thrd-txt">* Подробный кейс можно узнать написав мне в личные сообщения
+        </p>
+        </li>
+
+        <li class="case-container">
+          <svg width="20" height="20">
+            <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+          </svg>
+        <p class="case-title">Медицинский центр</p>
+        <p class="case-txt">Привлечение клиентов на консультации 
+          и продажи основного продукта </p>
+          <p class="sec-txt">✓ За месяц получили 460 лидов по средней цене 0,75$
+            ✓ Вложили 420$, заработали около 4000$
+            ✓ С данным клиентом работаем год и масштабируемся 
+            на другую страну</p>
+            <p class="thrd-txt">* Подробный кейс можно узнать написав мне в 
+              личные сообщения</p>
+              </li>
+
+              <li class="case-container">
+                <svg width="20" height="20">
+                  <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+                </svg>
+              <p class="case-title">Строительство</p>
+              <p class="case-txt">Клиенты для продажи лестниц и других металлоконструкций в Киеве и области</p>
+              <p class="sec-txt">✓ За месяц вложили 190$ 
+                ✓ Получили: 1550$</p>
+                <p class="thrd-txt">* Подробный кейс можно узнать написав мне в личные сообщения</p>
+                </li>
+
+                <li class="case-container">
+                  <svg width="20" height="20">
+                    <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+                  </svg>
+                <p class="case-title">Инфобизнес</p>
+                <p class="case-txt">Привлечение подписчиков в блог психолога</p>
+                <p class="sec-txt">✓ Вложили: 440$
+                  ✓ Цена подписчика: 0,17$
+                  ✓ Привлечено 2100 новых потенциальных клиентов</p>
+                  <p class="thrd-txt">* Подробный кейс можно узнать написав мне в личные сообщения</p>
+                  </li>
+    </ul>
+    </div>
+  </section>
+
+  <section class="section section-bcg-form">
+    <div class="container container-block">
+      <div class="title-box box-margin">
+    <h2 class="second-title">Оставить заявку для консультации</h2>
+    <p class="form-text">Для связи со мной заполните форму ниже</p>
+    </div>
+    <div class="form-border">
+    <form class="form">
+      <div class="input-flex">
+        <input type="text" name="name" class="label-name-current form-input" placeholder="Ваше имя">
+        <input type="tel" name="phone" class="form-input input-margin" placeholder=" Ваш телефон">
+      </div>
+      <button type="submit" class="hero-btn">Заказать консультацию</button>
+      <p class="form-text">Консультация для потенциальных клиентов бесплатно</p>
+    </form>
+    </div>
+    </div>
+  </section>
+
+    </main>
+
+    <footer class="section section-footer">
+
+      <div class="container container--flex">
+    
+        <button onclick="show('block')" type="button" class="modal-button">
+          <!-- <svg class="header__menu" width="38" height="38">
+            <use
+              class="header__icon"
+              href="./images/svg//burger.svg.svg"
+            ></use>
+          </svg> -->
+          </button>
+          <div id="overlay-footer" onclick="show('none')"></div>
+      <div id="modalForm">
+          <ul class="menu-list list">
+            <li class="menu-item">
+              <a href="https://" class="header-text header-text-current" onclick="show('none')">Главная</a>
+            </li>
+            <li class="menu-item">
+              <a href="#part1" class="header-text">Обо мне</a>
+            </li>
+            <li class="menu-item">
+              <a href="#part2" class="header-text">Мои услуги</a>
+            </li>
+            <li class="menu-item">
+              <a href="#part3" class="header-text">Отзывы</a>
+            </li>
+            <li class="menu-item">
+              <a href="#part4" class="header-text">Результаты</a>
+            </li>
+            <li class="menu-item">
+              <a href="#part5" class="header-text">Кейсы</a>
+            </li>
+          </ul> 
+      </div>
+      
+      <div class="header-box">
+      <a class="tel footer-tel" href="tel:+380977503155">
+      <svg width="10" height="16">
+        <use href="./images/svg/Instagram.svg"></use>
+      </svg>+380 97 750 3155</a>
+  </div>
+    
+    
+</div>
+
+<div class="footer-border">
+  <ul class="footer-line">
+    <li class="social-items">
+      <a href="" class="social-link1">
+        <svg width="20" height="23">
+          <!-- <use href="./images/svg/Facebook.svg"></use> -->
+        </svg>
+      </a>
+    </li>
+    <li class="social-items">
+      <a href="" class="social-link2">
+        <svg width="25" height="20">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+      </a>
+    </li>
+    <li class="social-items">
+      <a href="" class="social-link3">
+        <svg width="20" height="21">
+          <!-- <use href="./images/icons.svg#icon-instagram2"></use> -->
+        </svg>
+      </a>
+    </li>
+  </ul>
+      <p class="footer-txt">© Все права защищены 2021</p>
+  </div>
+    </footer>
+
+  <!-- js -->
+  <script src="./main.js"></script>
+  <script defer src="./js//mobile-menu.js"></script>
+
+<!-- --jQuery-- -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- --slider-- -->
+  <script src="./js//slick.min.js" ></script>
+  <!-- --file script-- -->
+  <script src="./js//script.js"></script>
+</body>
+</html>
+
