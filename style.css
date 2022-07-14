@@ -2229,7 +2229,6 @@ border-radius: 25px;
  }
 }
  
-
  @media screen and (min-width: 1440px) {
   .slider__item .review-text{
     color: rgba(255, 255, 255, 0.38);
