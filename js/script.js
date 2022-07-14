@@ -42,7 +42,9 @@ $('.slider').slick({
         slidesToShow: 1,
       }
     },
-  ]
+  ],
+  appendArrows:$('.arrows-box'),
+  appendDots:$('.arrows-box'),
 });
 
 
@@ -73,7 +75,9 @@ $('.slider-case').slick({
         dots: true
       }
     },
-  ]
+  ],
+  appendArrows:$('.arrows-case-box'),
+  appendDots:$('.arrows-case-box'),
 });
 });
 
