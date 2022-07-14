@@ -14,7 +14,7 @@ $('.slider').slick({
   variableWidth:true,
   centerMode: true,
   slidesToShow: 1,
-  centerPadding: '0px',
+  // centerPadding: '0px',
   initialSlide: 1,
 
   responsive: [
@@ -24,7 +24,7 @@ $('.slider').slick({
         arrows: true,
         dots:true,
         centerMode: true,
-        centerPadding: '200px',
+        // centerPadding: '200px',
         slidesToShow: 1,
         infinite: true,
           slidesToScroll: 1,
@@ -38,7 +38,7 @@ $('.slider').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '20px',
+        // centerPadding: '20px',
         slidesToShow: 1,
       }
     },
