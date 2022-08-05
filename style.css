@@ -1440,7 +1440,6 @@ width: 1200px;
 }
 
 
-
 .second-title-line-absolut {
   position: absolute;
   top: -15px;
@@ -1485,7 +1484,7 @@ margin-bottom: 22px;
 
 
   .second-title-line{
-    line-height: 102.69%;
+    line-height: 70.69%;
   }
 
 
@@ -2207,7 +2206,7 @@ margin-left: 20px;
   }
 
 .case-title {
-  font-family: 'Charm';
+  /* font-family: 'Charm'; */
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
