@@ -19,7 +19,7 @@ $('.slider').slick({
 
   responsive: [
     {
-      breakpoint: 1440,
+      breakpoint: 480,
       settings: {
         arrows: true,
         dots:true,
@@ -54,7 +54,6 @@ $('.slider-case').slick({
   arrows: true,
   dots: true,
   infinite: true,
-  speed: 300,
   slidesToShow: 2,
   slidesToScroll: 1,
   responsive: [
@@ -67,7 +66,7 @@ $('.slider-case').slick({
     },
 
     {
-      breakpoint: 361,
+      breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -79,7 +78,40 @@ $('.slider-case').slick({
   appendArrows:$('.arrows-case-box'),
   appendDots:$('.arrows-case-box'),
 });
+
+$('.slider__results').slick({
+  speed:1000,
+  cssEase: 'linear',
+  arrows: false,
+  dots: false,
+  infinite: true,
+  slidesToShow: 4,
+
+  responsive: [
+
+    {
+      breakpoint: 360,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        
+      }
+    },
+
+
+  ],
 });
+
+});
+
 
 
 $('.slider-case').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -96,3 +128,42 @@ console.log(counterValue);
   console.log(nextSlide);
 counterValue.textContent = nextSlide;
 });
+
+
+// var arrLang = {
+//   'ru': {
+//     'home': 'Главная',
+//     'about': 'Обо мне',
+//     'services': 'Мои услуги',
+//     'reviews': 'Отзывы',
+//     'results': 'Результаты',
+//     'case': 'Кейсы',
+//   },
+//   'en': {
+//     'home': 'Home',
+//     'about': 'About Me',
+//     'services': 'Services',
+//     'reviews': 'Reviews',
+//     'results': 'Results',
+//     'case': 'Case',
+//   },
+//   'ua': {
+//     'home': 'Головна',
+//     'about': 'Про мене',
+//     'services': 'Мої послуги',
+//     'reviews': 'Відгуки',
+//     'results': 'Результати',
+//     'case': 'Кейси',
+//   }
+// }
+
+//   $(function() {
+//     $('.translate').click(function() {
+//       var lang = $(this).attr('id');
+
+//       $('.lang').each(function(index, item) {
+//         $(this).text(arrLang[lang][$(this).attr('key')]);
+//       });
+//     });
+//   });
+

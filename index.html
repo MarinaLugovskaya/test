@@ -27,37 +27,40 @@
     <div id="overlay" onclick="show('none')"></div>
 <div id="modalForm">
  
-    <ul class="menu-list list">
-      <li class="menu-item">
-        <a href="https://" class="header-text header-text-current" onclick="show('none')">Главная</a>
-      </li>
-      <li class="menu-item">
-        <a href="#part1" class="header-text">Обо мне</a>
-      </li>
-      <li class="menu-item">
-        <a href="#part2" class="header-text">Мои услуги</a>
-      </li>
-      <li class="menu-item">
-        <a href="#part3" class="header-text">Отзывы</a>
-      </li>
-      <li class="menu-item">
-        <a href="#part4" class="header-text">Результаты</a>
-      </li>
-      <li class="menu-item">
-        <a href="#part5" class="header-text">Кейсы</a>
-      </li>
-    </ul> 
-</div>
+  
+  <ul class="menu-list list">
+    <li class="menu-item">
+      <a href="https://" class="header-text header-text-current lang" key="home" onclick="show('none')">Главная</a>
+    </li>
+    <li class="menu-item">
+      <a href="#part1" class="header-text lang" key="about">Обо мне</a>
+    </li>
+    <li class="menu-item">
+      <a href="#part2" class="header-text lang" key="services">Мои услуги</a>
+    </li>
+    <li class="menu-item">
+      <a href="#part3" class="header-text lang" key="reviews">Отзывы</a>
+    </li>
+    <li class="menu-item">
+      <a href="#part4" class="header-text lang" key="results">Результаты</a>
+    </li>
+    <li class="menu-item">
+      <a href="#part5" class="header-text lang" key="case">Кейсы</a>
+    </li>
+  </ul>
 
+  
+</div>
 <div class="header-box">
-<a class="tel" href="tel:+380977503155"><svg width="50" height="50" class="phone-svg"></svg>+380 97 750 3155</a>
-
-<ul class="lang-list list">
-  <li class="header-lang"><a href="https://" class="lang-link">UA</a></li>
-  <li class="header-lang"><a href="https://" class="lang-link">RU</a></li>
-  <li class="header-lang"><a href="https://" class="lang-link">EN</a></li>
-</ul>
-</div>
+  <a class="tel" href="tel:+380977503155"><svg width="50" height="50" class="phone-svg"></svg>+380 97 750 3155</a>
+  
+  <ul class="lang-list list">
+    <li class="header-lang">  <button id="ua" class="lang-link translate" type="button">UA</button> </li>
+    <li class="header-lang">  <button id="ru" class="lang-link translate" type="button">RU</button> </li>
+    <li class="header-lang">  <button id="en" class="lang-link translate" type="button">EN</button> </li>
+    </ul>
+  
+  </div>
 </div>
   </header>
 
@@ -66,13 +69,15 @@
     <section class="section-hero-bgc">
       <div class="container">
         <div class="info-hero">
-   <h1 class="hero-title">Наталья Малиновская</h1>
-    <p class="hero-text">ТАРГЕТОЛОГ, НАСТАВНИК</p>
-    <p class="hero-txt">Не занимаюсь примитивной настройкой рекламы,  а провожу глубокий маркетинговый аудит после которого реализовываю трафик-систему и выстраиваю с клиентами долгосрочные партнерские отношения</p>
+   <h1 class="hero-title lang lang" key="name">Наталья Малиновская</h1>
+    <p class="hero-text lang" key="target">ТАРГЕТОЛОГ, НАСТАВНИК</p>
+    <p class="hero-txt lang" key="herotitle">Не занимаюсь пр митивной настройкой рекламы,  а провожу глубокий маркетинговый аудит после которого реализовываю трафик-систему и выстраиваю с клиентами долгосрочные партнерские отношения</p>
     <div class="button-flex">
     <svg width="10" height="16" class="button-svg"></svg>
     
-    <button type="button" class="hero-btn btn">Связаться со мной</button> 
+    <button type="button" class="hero-btn btn">
+<a href="#part10" class="header-text lang" key="button">Связаться со мной</a>
+    </button> 
     </div>
   </div>
 
@@ -114,30 +119,30 @@
 
   <section class="section section-feature">
     <div class="container">
-    <h2 class="second-title-absolute">Мои преимущества</h2>
+    <h2 class="second-title-absolute lang" key="features">Мои преимущества</h2>
     <ul class="feature-list list">
       <li class="feature-item">
         <svg width="61" height="58" class="feature-svg__1">
         <use href="./images/svg/clock.svg"></use>
       </svg>
-      <p class="feature-descr">Честность, дедлайн, ответственность</p>
+      <p class="feature-descr lang" key="features1">Честность, дедлайн, ответственность</p>
       </li>
 
       <li class="feature-item">
         <svg width="69" height="67" class="feature-svg__2">
       </svg>
-      <p class="feature-descr">Глубокое понимание бизнеса, как системы</p>
+      <p class="feature-descr lang" key="features2">Глубокое понимание бизнеса, как системы</p>
       </li>
 
       <li class="feature-item">
         <svg width="69" height="60" class="feature-svg__3">
       </svg>
-      <p class="feature-descr">Знания алгоритма работы Facebook ads</p>
+      <p class="feature-descr lang" key="features3">Знания алгоритма работы Facebook ads</p>
  </li>
 
  <li class="feature-item">
    <svg width="83" height="65" class="feature-svg__4"></svg>
-<p class="feature-descr">Знания в построении воронки продаж</p>
+<p class="feature-descr lang" key="features4">Знания в построении воронки продаж</p>
 </li>
     </ul>
 </div>
@@ -145,7 +150,7 @@
 
   <section class="section section-bcg">
     <div class="container container-block">
-    <h2 id="part1" class="title-left">Обо мне</h2>
+    <h2 id="part1" class="title-left lang" key="aboutme">Обо мне</h2>
     <div class="flex-about">
       <div class="aboutMe-img-box">
     <img class="about-me-form"
@@ -166,15 +171,15 @@
   <div class="blur"></div>
 <div class="about-container">
   <ul class="txt-box">
-    <li class="info-item"><p class="info-text">Таргетолог с опытом работы в продажах более 10 лет</p></li>
-    <li class="info-item"><p class="info-text">Помогаю бизнесам вырасти в доходе с помощью таргетированной рекламы</p></li>
-    <li class="info-item"><p class="info-text">Обучилась таргету у лучших - Терновая, Лыманюк, Скворцов, Мизев, продажи - Ясинский, личное наставничество Черкассова</p></li>
-    <li class="info-item"><p class="info-text">Лучшие кейсы в нишах: инфобизнес, товарный бизнес (инсташопы), недвижимость, строительство и e-commerce</p></li>
-    <li class="info-item"><p class="info-text">Запустила личное наставничество для таргетологов</p></li>
-    <li class="info-item"><p class="info-text">LTV моих клиентов от 8 мес</p></li>
+    <li class="info-item"><p class="info-text lang" key="aboutmetext1">Таргетолог с опытом работы в продажах более 10 лет</p></li>
+    <li class="info-item"><p class="info-text lang" key="aboutmetext2">Помогаю бизнесам вырасти в доходе с помощью таргетированной рекламы</p></li>
+    <li class="info-item"><p class="info-text lang" key="aboutmetext3">Обучилась таргету у лучших - Терновая, Лыманюк, Скворцов, Мизев, продажи - Ясинский, личное наставничество Черкассова</p></li>
+    <li class="info-item"><p class="info-text lang" key="aboutmetext4">Лучшие кейсы в нишах: инфобизнес, товарный бизнес (инсташопы), недвижимость, строительство и e-commerce</p></li>
+    <li class="info-item"><p class="info-text lang" key="aboutmetext5">Запустила личное наставничество для таргетологов</p></li>
+    <li class="info-item"><p class="info-text lang" key="aboutmetext6">LTV моих клиентов от 8 мес</p></li>
 </ul>
-<p class="info-title-text">МОИ ПРИНЦИПЫ:</p> 
-<p class="info-text">Долгосрочные партнерские отношения. 
+<p class="info-title-text lang" key="aboutmetitle">МОИ ПРИНЦИПЫ:</p> 
+<p class="info-text lang" key="aboutmeinfo">Долгосрочные партнерские отношения. 
   Талант не нужен - только план, дедлайны и дисциплина.</p>
 </div>
   </div>
@@ -183,17 +188,17 @@
 <!-- <section class="section section-bcg"> -->
   <div class="services-block">
   <div class="title-box">
-    <h3 class="thrd-title">Почему стоит работать со мной?</h3>
+    <h3 class="thrd-title lang" key="aboutmetext6">Почему стоит работать со мной?</h3>
     <div class="frame-box">
-  <p class="interp-text">Потому что я кайфую от того, чем занимаюсь :)</p>
-  <p class="services-title">А так же:</p>
+  <p class="interp-text lang" key="aboutmetitle2">Потому что я кайфую от того, чем занимаюсь :)</p>
+  <p class="services-title lang" key="aboutmetxt">А так же:</p>
   <ul class="work-list list">
-    <li class="info-item"><p class="info-text">- Работаю по KPI и беру ответственность за ваш результат</p></li>
-    <li class="info-item"><p class="info-text">- Досконально изучаю ваш бизнес и провожу маркетинговый аудит перед началом работы</p></li>
-    <li class="info-item"><p class="info-text">- Измеряю эффективность работы не кликами, а уровнем окупаемости ваших вложений и показателем вовлеченности в ваш продукт</p></li>
-    <li class="info-item"><p class="info-text">- Знаю последовательный алгоритм действий, как кратно вырасти таргетологу</p></li>
-    <li class="info-item"><p class="info-text">- Выпускаю учеников с доходом от 1200$+</p></li>
-    <li class="info-item"><p class="info-text">- Не исчезаю из поля зрения и всегда с вами на связи</p></li>
+    <li class="info-item"><p class="info-text lang" key="info-text1">- Работаю по KPI и беру ответственность за ваш результат</p></li>
+    <li class="info-item"><p class="info-text lang" key="info-text2">- Досконально изучаю ваш бизнес и провожу маркетинговый аудит перед началом работы</p></li>
+    <li class="info-item"><p class="info-text lang" key="info-text3">- Измеряю эффективность работы не кликами, а уровнем окупаемости ваших вложений и показателем вовлеченности в ваш продукт</p></li>
+    <li class="info-item"><p class="info-text lang" key="info-text4">- Знаю последовательный алгоритм действий, как кратно вырасти таргетологу</p></li>
+    <li class="info-item"><p class="info-text lang" key="info-text5">- Выпускаю учеников с доходом от 1200$+</p></li>
+    <li class="info-item"><p class="info-text lang" key="info-text6">- Не исчезаю из поля зрения и всегда с вами на связи</p></li>
 </ul>
 </div>
 </div>
@@ -207,7 +212,7 @@
     height="352"
   />
 
-    <p class="social-txt">Подпишись на инстаграм <a href="#" class="thrd-title padding-none">@nmsk_digital</a></p>
+    <p class="social-txt lang" key="socialtxt">Подпишись на инстаграм <a href="#" class="thrd-title padding-none lang" key="sociallink">@nmsk_digital</a></p>
     </div>
     </div>
   </section>
@@ -215,15 +220,14 @@
   <section class="section section-services-bgc">
     <div class="container">
       <div class="services-line-box">
-      <h2 id="part2" class="second-title-line second-title-line-absolut">Мои услуги</h2>
-
+      <h2 id="part2" class="second-title-line second-title-line-absolut lang" key="servicetitle">Мои услуги</h2>
     <ul class="services-list list">
       <li class="services-item">
         <div class="services-flexbox">
         <svg class="services-svg_1"></svg>
-        <h3 class="services-title">1. Настройка и ведение таргетированной рекламы </h3>
+        <h3 class="services-title lang" key="servicetitle2">1. Настройка и ведение таргетированной рекламы </h3>
         </div>
-        <p class="services-text">-Анализ ниши/конкурентов
+        <p class="services-text lang" key="service-text1">-Анализ ниши/конкурентов
           -Разработка индивидуальной стратегии
           -Забочусь о ваших расходах и подбираю инструменты исходя из пожеланий и планируемого бюджета
           -Использую базы ретаргетинга для получения оптимальной цены
@@ -235,10 +239,10 @@
       <li class="services-item">
         <div class="services-flexbox">
         <svg width="57" height="46" class="services-svg_2"></svg>
-        <h3 class="services-title">2. Консультация + Аудит рекламного кабинета
+        <h3 class="services-title lang" key="servicetitle3">2. Консультация + Аудит рекламного кабинета
           ДЛЯ БИЗНЕСА
           </h3></div>
-          <p class="services-text">-Вы предоставляете заранее все вопросы, которые хотели бы разобрать на консультации
+          <p class="services-text lang" key="service-text2">-Вы предоставляете заранее все вопросы, которые хотели бы разобрать на консультации
             -Связываемся в zoom, длительность 1,5-2 часа 
             -После консультации вы получаете запись, файл с аудитом и сопровождение в течение 3-х дней 
             -Подготовка займет 3 рабочих дня с момента согласования
@@ -249,8 +253,8 @@
       <li class="services-item">
         <div class="services-flexbox">
         <svg width="59" height="46" class="services-svg_3"></svg>
-        <h3 class="services-title">3. Консультация  для таргетологов</h3></div>
-        <p class="services-text">-Вы предоставляете заранее все вопросы, которые хотели бы разобрать на консультации
+        <h3 class="services-title lang" key="servicetitle4">3. Консультация  для таргетологов</h3></div>
+        <p class="services-text lang" key="service-text3">-Вы предоставляете заранее все вопросы, которые хотели бы разобрать на консультации
           -Связываемся в zoom, длительность -1,5 часа
           -После консультации вы получаете запись и сопровождение в течение 3-х дней 
           * Стоимость - 90$ 
@@ -260,8 +264,8 @@
       <li class="services-item">
         <div class="services-flexbox">
         <svg width="47" height="53" class="services-svg_4"></svg>
-        <h3 class="services-title">4. Личное наставничество для  таргетологов    </h3></div>
-        <p class="services-text">-Перед началом работы мы с вами созваниваемся и определяем 
+        <h3 class="services-title lang" key="servicetitle5">4. Личное наставничество для  таргетологов    </h3></div>
+        <p class="services-text lang" key="service-text4">-Перед началом работы мы с вами созваниваемся и определяем 
           вашу точку А и желаемую точку B к концу обучения
           -Прописываем индивидуальный план достижения цели и ваши точки роста
           
@@ -275,8 +279,8 @@
       <li class="services-item">
         <div class="services-flexbox">
         <svg width="40" height="51" class="services-svg_5"></svg>
-        <h3 class="services-title">5. Заказать настройку от учеников</h3></div>
-        <p class="services-text">-Условия: Бюджет на 2 недели 100-150$ 
+        <h3 class="services-title lang" key="servicetitle6">5. Заказать настройку от учеников</h3></div>
+        <p class="services-text lang" key="service-text5">-Условия: Бюджет на 2 недели 100-150$ 
           * Зависит от ниши
           -Оплата услуг 100-150$ 
           * Зависит от опыта специалиста
@@ -285,23 +289,24 @@
       </li>
       </ul>
 
-      <button type="button" class="hero-btn">Отправить заявку</button>
+      <button type="button" class="hero-btn" >
+        <a href="#part10" class="header-text lang" key="servicebtn">Отправить заявку</a></button>
       </div>
       </div>
   </section>
 
   <section class="section section-reviews-bgc">
-    <div class="container container-block pading-none">
-      <h2 id="part3" class="second-title title-left">Отзывы</h2>
+    <div class="container-pading-none">
+      <h2 id="part3" class="second-title title-left lang" key="reviews">Отзывы</h2>
   <div class="slider">
 
     <div class="slider__item">
       <div class="reviews-container list">
         <li class="reviews-list">
-      <p class="review-text">Натали, спасибо Вам за ваш профессионализм, за ваш подход к делу. Вы не просто делаете свою работу, вы вникаете в процесс нашей работы и с полной отдачей выдаёте высочайший результат. За год работы с вами мы выросли в продажах и теперь масштабируемся.
+      <p class="review-text lang" key="reviewstext1">Натали, спасибо Вам за ваш профессионализм, за ваш подход к делу. Вы не просто делаете свою работу, вы вникаете в процесс нашей работы и с полной отдачей выдаёте высочайший результат. За год работы с вами мы выросли в продажах и теперь масштабируемся.
         Я довольна нашим сотрудничеством и трудимся дальше.
         </p>
-        <p class="reviews-sec-txt">Екатерина
+        <p class="reviews-sec-txt lang" key="reviewstxt1">Екатерина
           руководитель медицинского центра
           </p>
     </li>
@@ -311,13 +316,13 @@
     <div class="slider__item">
       <div class="reviews-container list">
       <li class="reviews-list">
-        <p class="review-text">Я осталась очень довольна сотрудничеством с Натальей. 
+        <p class="review-text lang" key="reviewstext2">Я осталась очень довольна сотрудничеством с Натальей. 
           Она настроила рекламу на Фейсбук и Инстаграм для нашего интернет-магазина, которая принесла нам сообщения в директ по цене ниже KPI, новых клиентов и конкретные продажи.
            Вложения в рекламу окупились в конце месяца работы. 
           Мне было очень приятно работать с вами - объясняли все детально, помогли с
            продажами и отдельно спасибо за рекомендации по продажам в переписках. Я увидела, что вы человек, на которого можно положиться, я уверенно рекомендую вас как толкового и ответственного таргетолога. 
           </p>
-          <p class="reviews-sec-txt">Татьяна <br>
+          <p class="reviews-sec-txt lang" key="reviewstxt2">Татьяна <br>
             менеджер магазина постельного белья</p>
       </li>
       </div>
@@ -326,10 +331,10 @@
   <div class="slider__item">
     <div class="reviews-container list">
   <li class="reviews-list">
-      <p class="review-text">Наталья, благодарю вас за ответственный подход к работе. Мы с партнером вначале  сомневались, так как был негативный опыт с другими таргетологами, но решились довериться вам и не ошиблись, 
+      <p class="review-text lang" key="reviewstext3">Наталья, благодарю вас за ответственный подход к работе. Мы с партнером вначале  сомневались, так как был негативный опыт с другими таргетологами, но решились довериться вам и не ошиблись, 
         Спасибо вам! Честно, по делу, всегда на связи и круто, что помогали вести учет лидов.
         </p>
-        <p class="reviews-sec-txt">Михаил
+        <p class="reviews-sec-txt lang" key="reviewstxt3">Михаил
           учредитель строительной компании
          </p>
     </li>
@@ -344,9 +349,92 @@
 
   <section class="section-res-bgc">
     <div class="container container-block">
-    <h2 id="part4" class="second-title">Результаты учениц после обучения</h2>
-    <ul class="results-list list">
-<div class="results-img-box">
+    <h2 id="part4" class="second-title title-res lang" key="resultstitle">Результаты учениц после обучения</h2>
+
+    <div class="slider__results">
+      <!-- <ul class="results-list list"> -->
+
+
+      <div class="slider__item-results list">
+<!-- <div class="results-img-box"> -->
+          <li class="res-item1">
+            <img
+            class="img img1"
+            srcset="./images/res1x1.png ./images/res2x2.png 2x"
+            src="./images/res1x1.png"
+            alt="Анастасия" />
+
+        <img class="circle1"
+        srcset="./images/circle_1xMob.png 1x, ./images/circle_2xMob.png 2x"
+        src="./images/circle_1xMob.png"
+        alt="Ольга"
+      />
+      </li>
+
+</div>
+<div class="slider__item-results list">
+      <li class="res-item2">
+        <img
+        class="img img2"
+        srcset="./images/res2x1.png 1x, ./images/res2x2.png 2x"
+        src="./images/res2x1.png"
+        alt="Анастасия"
+      />
+
+      <img class="circle2"
+      srcset="./images/circle_1xMob.png 1x, ./images/circle_2xMob.png 2x"
+      src="./images/circle_1xMob.png"
+      alt="Ольга"
+    />
+      </li>
+      </div>
+        <!-- </div> -->
+
+        <!-- <div class="box-hidden"> -->
+        <div class="slider__item-results list">
+          <li class="res-item3">
+            <img
+            class="img img3"
+            srcset="./images/res3x1.png 1x, ./images/res3x2.png 2x"
+            src="./images/res3x1.png"
+            alt="Анастасия"
+          />
+    
+          <img
+          class="circle3"
+          srcset="./images/circle_1xMob.png 1x, ./images/circle_2xMob.png 2x"
+          src="./images/circle_1xMob.png"
+          alt="circle"
+        />
+          </li>
+        </div>
+
+
+        <div class="slider__item-results list">
+          <li class="res-item4">
+            <img
+            class="img img4"
+            srcset="./images/res4x1.png 1x, ./images/res4x2.png 2x"
+            src="./images/res4x1.png"
+            alt="Анастасия"
+            width="152"
+            height="158"
+          />
+    
+          <img class="circle4"
+          srcset="./images/circle_1xMob.png 1x, ./images/circle_2xMob.png 2x"
+          src="./images/circle_1xMob.png.png"
+          alt="circle"
+        />
+          </li>
+        </div>
+        <!-- </div> -->
+
+<!-- </ul> -->
+        </div>
+
+    <!-- <ul class="results-list list"> -->
+<!-- <div class="results-img-box">
           <li class="res-item1">
             <img
             class="img img1"
@@ -377,10 +465,10 @@
       alt="Ольга"
     />
       </li>
-      </div>
+      </div> -->
   
-      <div class="box-hidden">
-        <li>
+      <!-- <div class="box-hidden"> -->
+        <!-- <li>
         <img
         class="img img3"
         srcset="./images/res2_1xMob.png 1x, ./images/res2_2xMob.png 2x"
@@ -394,10 +482,10 @@
       src="./images/circle_1xMob.png"
       alt="circle"
     />
-      </li>
+      </li> -->
 
 
-      <li class="res-item4">
+      <!-- <li class="res-item4">
         <img
         class="img img4"
         srcset="./images/res4_1xDesc.png 1x, ./images/res4_2xDesc.png 2x"
@@ -412,38 +500,38 @@
       src="./images/circle_1xMob.png.png"
       alt="circle"
     />
-      </li>
-      </div>
-    </ul>
+      </li> -->
+      <!-- </div> -->
+    <!-- </ul>  -->
     </div>
-    <img class="mountains"
+    <!-- <img class="mountains"
     srcset="./images/res_1xDesc.png 1x, ./images/res_2xDesc.png 2x"
     src="./images/res_1xDesc.png"
     alt="горы"
     width="2793"
     height="405"
-  />
+  /> -->
   </section>
 
   <section class="section section-case-bgc">
     <div class="container container-block">
-    <h2 id="part5" class="second-title">Кейсы</h2>
-    <div class="slider-case list">
+    <h2 id="part5" class="second-title lang" key="case">Кейсы</h2>
+    <ul class="slider-case list">
 
       <div class="slider__item-case">
         <li class="case-container">
           <div class="case-flex">
         <svg width="20" height="20" class="case-svg1"></svg>
-          <p class="case-title">Недвижимость</p></div>
-          <p class="case-txt">1.1 Привлечение клиентов для продажи коттеджей в Киевской области</p>
-          <p class="sec-txt">✓ За 2 мес. получили 300 лидов по средней цене 4,30$</p>
-          <p class="thrd-txt">* Подробный кейс можно узнать написав мне в личные сообщения
+          <p class="case-title lang" key="casetxt1">Недвижимость</p></div>
+          <p class="case-txt lang" key="casetxt2">.1 Привлечение клиентов для продажи коттеджей в Киевской области</p>
+          <p class="sec-txt lang" key="casetxt3">✓ За 2 мес. получили 300 лидов по средней цене 4,30$</p>
+          <p class="thrd-txt lang" key="casetxt7">* Подробный кейс можно узнать написав мне в личные сообщения
           </p>
       
-          <p class="case-txt">1.2 Привлечение клиентов для продажи энергодомов в Киеве и области</p>
-          <p class="sec-txt">✓ За месяц получили 610 лидов с сайта  по 1,47$ и 
+          <p class="case-txt lang" key="casetxt5">1.2 Привлечение клиентов для продажи энергодомов в Киеве и области</p>
+          <p class="sec-txt lang" key="casetxt6">✓ За месяц получили 610 лидов с сайта  по 1,47$ и 
             183  лида с лид формы по 0,81$</p>
-          <p class="thrd-txt">* Подробный кейс можно узнать написав мне в личные сообщения
+          <p class="thrd-txt lang" key="casetxt7">* Подробный кейс можно узнать написав мне в личные сообщения
           </p>
           </li>
     
@@ -453,14 +541,14 @@
         <li class="case-container">
           <div class="case-flex">
           <svg width="20" height="20" class="case-svg2"></svg>
-        <p class="case-title">Медицинский центр</p></div>
-        <p class="case-txt">Привлечение клиентов на консультации 
+        <p class="case-title lang" key="casetxt8">Медицинский центр</p></div>
+        <p class="case-txt lang" key="casetxt9">Привлечение клиентов на консультации 
           и продажи основного продукта </p>
-          <p class="sec-txt">✓ За месяц получили 460 лидов по средней цене 0,75$</p>
-          <p class="sec-txt"> ✓ Вложили 420$, заработали около 4000$</p>
-            <p class="sec-txt"> ✓ С данным клиентом работаем год и масштабируемся
+          <p class="sec-txt lang" key="casetxt10">✓ За месяц получили 460 лидов по средней цене 0,75$</p>
+          <p class="sec-txt lang" key="casetxt11"> ✓ Вложили 420$, заработали около 4000$</p>
+            <p class="sec-txt lang" key="casetxt12"> ✓ С данным клиентом работаем год и масштабируемся
             на другую страну</p>
-            <p class="thrd-txt">* Подробный кейс можно узнать написав мне в 
+            <p class="thrd-txt lang" key="casetxt13">* Подробный кейс можно узнать написав мне в 
               личные сообщения</p>
               </li>
     </div>
@@ -469,11 +557,11 @@
       <li class="case-container">
         <div class="case-flex">
     <svg width="20" height="20" class="case-svg3"></svg>
-      <p class="case-title">Строительство</p></div>
-      <p class="case-txt">Клиенты для продажи лестниц и других металлоконструкций в Киеве и области</p>
-      <p class="sec-txt">✓ За месяц вложили 190$</p>
-       <p class="sec-txt"> ✓ Получили: 1550$</p>
-        <p class="thrd-txt">* Подробный кейс можно узнать написав мне в личные сообщения</p>
+      <p class="case-title lang" key="casetxt14">Строительство</p></div>
+      <p class="case-txt lang" key="casetxt15">Клиенты для продажи лестниц и других металлоконструкций в Киеве и области</p>
+      <p class="sec-txt lang" key="casetxt16">✓ За месяц вложили 190$</p>
+       <p class="sec-txt lang" key="casetxt17"> ✓ Получили: 1550$</p>
+        <p class="thrd-txt lang" key="casetxt18">* Подробный кейс можно узнать написав мне в личные сообщения</p>
         </li>
     </div>
     
@@ -481,24 +569,24 @@
       <li class="case-container">
         <div class="case-flex">
         <svg width="20" height="20" class="case-svg4"> </svg>
-      <p class="case-title">Инфобизнес</p></div>
-      <p class="case-txt">Привлечение подписчиков в блог психолога</p>
-      <p class="sec-txt">✓ Вложили: 440$</p>
-      <p class="sec-txt"> ✓ Цена подписчика: 0,17$</p>
-      <p class="sec-txt"> ✓ Привлечено 2100 новых потенциальных клиентов</p>
-        <p class="thrd-txt">* Подробный кейс можно узнать написав мне в личные сообщения</p>
+      <p class="case-title lang" key="casetxt19">Инфобизнес</p></div>
+      <p class="case-txt lang" key="casetxt20">Привлечение подписчиков в блог психолога</p>
+      <p class="sec-txt lang" key="casetxt21">✓ Вложили: 440$</p>
+      <p class="sec-txt lang" key="casetxt22"> ✓ Цена подписчика: 0,17$</p>
+      <p class="sec-txt lang" key="casetxt23"> ✓ Привлечено 2100 новых потенциальных клиентов</p>
+        <p class="thrd-txt lang" key="casetxt24">* Подробный кейс можно узнать написав мне в личные сообщения</p>
         </li>
     </div>
-    </div>
+  </ul>
     <div class="arrows-case-box"></div>
     </div>
   </section>
 
-  <section class="section section-bcg-form">
+  <section class="section section-bcg-form" id="part10">
     <div class="container container-block">
       <div class="title-box box-margin">
-    <h2 class="second-title">Оставить заявку для консультации</h2>
-    <p class="form-text">Для связи со мной заполните форму ниже</p>
+    <h2 class="second-title lang" key="formtitle">Оставить заявку для консультации</h2>
+    <p class="form-text lang" key="formtext">Для связи со мной заполните форму ниже</p>
     </div>
     <div class="form-border">
     <form class="form">
@@ -506,8 +594,8 @@
         <input type="text" name="name" class="label-name-current form-input" placeholder="Ваше имя">
         <input type="tel" name="phone" class="form-input input-margin" placeholder=" Ваш телефон">
       </div>
-      <button type="submit" class="hero-btn">Заказать консультацию</button>
-      <p class="form-text">Консультация для потенциальных клиентов бесплатно</p>
+      <button type="submit" class="hero-btn lang" key="formbtn">Заказать консультацию</button>
+      <p class="form-text lang" key="formtxt">Консультация для потенциальных клиентов бесплатно</p>
     </form>
     </div>
     </div>
@@ -525,22 +613,22 @@
       <div id="modalForm">
           <ul class="menu-list list">
             <li class="menu-item">
-              <a href="https://" class="header-text header-text-current" onclick="show('none')">Главная</a>
+            <a href="https://" class="header-text header-text-current" onclick="show('none')">Главная</a>
             </li>
             <li class="menu-item">
-              <a href="#part1" class="header-text">Обо мне</a>
+            <a href="#part1" class="header-text lang" key="about">Обо мне</a>
             </li>
             <li class="menu-item">
-              <a href="#part2" class="header-text">Мои услуги</a>
+            <a href="#part2" class="header-text lang" key="services">Мои услуги</a>
             </li>
             <li class="menu-item">
-              <a href="#part3" class="header-text">Отзывы</a>
+            <a href="#part3" class="header-text lang" key="reviews">Отзывы</a>
             </li>
             <li class="menu-item">
-              <a href="#part4" class="header-text">Результаты</a>
+            <a href="#part4" class="header-text lang" key="results">Результаты</a>
             </li>
             <li class="menu-item">
-              <a href="#part5" class="header-text">Кейсы</a>
+              <a href="#part5" class="header-text lang" key="case">Кейсы</a>
             </li>
           </ul> 
       </div>
@@ -573,19 +661,21 @@
     </li>
   </ul>
   </div>
-      <p class="footer-txt">© Все права защищены 2021</p>
+      <p class="footer-txt lang" key="footertext">© Все права защищены 2021</p>
   </div>
     </footer>
 
   <!-- js -->
-  <script src="./main.js"></script>
+  <!-- <script src="./main.js"></script> -->
+  <script src="./jquery.min.js"></script>
   <script defer src="./js//mobile-menu.js"></script>
 
 <!-- --jQuery-- -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
   <!-- --slider-- -->
   <script src="./js//slick.min.js" ></script>
   <!-- --file script-- -->
   <script src="./js//script.js"></script>
+
 </body>
 </html>
