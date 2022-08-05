@@ -2714,16 +2714,6 @@ border-radius: 25px;
     background-size: cover;
     background-repeat: no-repeat;
    }
-
-
-
- /* @media screen and (max-width: 896px) {
- .slider__item.slick-center .reviews-container {
-  background-blend-mode: soft-light;
-  backdrop-filter: blur(70px);
-  background-color: red;
- }
-} */
  
  @media screen and (min-width: 896px) {
   .slider__item .review-text{
@@ -2791,7 +2781,7 @@ margin-top: 48px;
   }
 
   .slider-case{
-    position: relative;
+    /* position: relative; */
   }
 
   .arrows-case-box {
