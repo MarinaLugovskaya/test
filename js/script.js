@@ -1,51 +1,58 @@
 $(document).ready(function() {
-$('.slider').slick({
-  arrows: true,
-  dots:true,
-  adaptiveHeight:true,
-  speed:1000,
-  cssEase: 'linear',
-  infinite: true,
-    // autoplay: true,
-  // autoplaySpeed: 2500,
-  // pauseOnFocus: true,
-  // pauseOnHover: true,
-  // pauseOnDotsHover: true,
-  variableWidth:true,
-  centerMode: true,
-  slidesToShow: 1,
-  // centerPadding: '0px',
-  initialSlide: 1,
-
-  responsive: [
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: true,
-        dots:true,
-        centerMode: true,
-        // centerPadding: '200px',
-        slidesToShow: 1,
-        infinite: true,
-          slidesToScroll: 1,
-          variableWidth: true,
-          mobileFirst: true,
-      }
-    },
-
-    {
-      breakpoint: 361,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        // centerPadding: '20px',
-        slidesToShow: 1,
-      }
-    },
-  ],
-  appendArrows:$('.arrows-box'),
-  appendDots:$('.arrows-box'),
-});
+  var rev = $('.rev_slider');
+  rev.on('init', function(event, slick, currentSlide) {
+    var
+      cur = $(slick.$slides[slick.currentSlide]),
+      next = cur.next(),
+      prev = cur.prev();
+    prev.addClass('slick-sprev');
+    next.addClass('slick-snext');
+    cur.removeClass('slick-snext').removeClass('slick-sprev');
+    slick.$prev = prev;
+    slick.$next = next;
+  }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    console.log('beforeChange');
+    var
+      cur = $(slick.$slides[nextSlide]);
+    console.log(slick.$prev, slick.$next);
+    slick.$prev.removeClass('slick-sprev');
+    slick.$next.removeClass('slick-snext');
+    next = cur.next(),
+      prev = cur.prev();
+    prev.prev();
+    prev.next();
+    prev.addClass('slick-sprev');
+    next.addClass('slick-snext');
+    slick.$prev = prev;
+    slick.$next = next;
+    cur.removeClass('slick-next').removeClass('slick-sprev');
+  });
+  
+  rev.slick({
+arrows: true,
+ dots:true,
+ adaptiveHeight:true,
+ speed:1000,
+cssEase: 'linear',
+ infinite: true,
+    infinite: true,
+    centerMode: true,
+     slidesPerRow: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerPadding: '0',
+    swipe: true,
+    infinite: true,
+    appendArrows:$('.arrows-box'),
+    appendDots:$('.arrows-box'),
+  });
+  
+  $('.rev_slider ').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    let counterValue = (document.querySelector('#slick-slide-control00'));
+    console.log(counterValue);
+      console.log(nextSlide);
+    counterValue.textContent = nextSlide;
+    });
 
 
 $('.slider-case').slick({
@@ -56,12 +63,13 @@ $('.slider-case').slick({
   infinite: true,
   slidesToShow: 2,
   slidesToScroll: 1,
+  focusOnSelect: true,
   responsive: [
     {
       breakpoint: 1440,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
       }
     },
 
@@ -77,26 +85,27 @@ $('.slider-case').slick({
   ],
   appendArrows:$('.arrows-case-box'),
   appendDots:$('.arrows-case-box'),
+  
 });
 
+$('.slider-case').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  let counterValue = (document.querySelector('#slick-slide-control10'));
+  console.log(counterValue);
+    console.log(nextSlide);
+  counterValue.textContent = nextSlide;
+  });
+
+
 $('.slider__results').slick({
-  speed:1000,
+  speed:400,
   cssEase: 'linear',
   arrows: false,
   dots: false,
   infinite: true,
   slidesToShow: 4,
+  slidesToScroll: 2,
 
   responsive: [
-
-    {
-      breakpoint: 360,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        
-      }
-    },
     {
       breakpoint: 1200,
       settings: {
@@ -106,25 +115,15 @@ $('.slider__results').slick({
       }
     },
 
-
+    {
+      breakpoint: 360,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        
+      }
+    },
   ],
 });
 
-});
-
-
-
-$('.slider-case').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-let counterValue = (document.querySelector('#slick-slide-control11'));
-console.log(counterValue);
-  console.log(nextSlide);
-counterValue.textContent = nextSlide;
-});
-
-
-$('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-let counterValue = (document.querySelector('#slick-slide-control01'));
-console.log(counterValue);
-  console.log(nextSlide);
-counterValue.textContent = nextSlide;
 });
