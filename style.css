@@ -314,7 +314,7 @@ margin-left: 20px;
 
 .lang-link:hover,
 .lang-link:focus {
-color: #00E0D3;
+color: #e0fffd;
   transform: scale(1.1);
   }
 
@@ -531,7 +531,7 @@ position: relative;
 
   @media screen and (min-width: 1200px) {
     .hero-img-box{
-      top: -240px;
+      top: -210px;
       left: 0px;
       width: 3000px;
       /* left: 0px; */
@@ -541,7 +541,7 @@ position: relative;
 
 @media screen and (min-width: 1440px) {
   .hero-img-box{
-    top: -240px;
+    top: -210px;
     left: 0px;
     width: 3000px;
     height: 0px;
@@ -599,16 +599,16 @@ z-index: 2;
 
   @media screen and (min-width: 1200px) {
     .hero-photo {
-      top: 285px;
-      left: 30px;
+      top: 258px;
+      left: 31px;
       width: 580px;
     }
   }
 
 @media screen and (min-width: 1440px) {
   .hero-photo {
-    top: 30px;
-    left: 30px;
+    top: 0px;
+    left: 20px;
     width: 580px;
   }
 }
@@ -641,6 +641,11 @@ z-index: 2;
   }
   }
 
+  @media screen and (min-width: 1200px) {
+    .hero-social-networks {
+  top: 350px;
+  right: -20px;
+    }}
 
 @media screen and (min-width: 1200px) {
 .hero-networks-svg1 {
@@ -677,8 +682,10 @@ z-index: 2;
 }
 }
 
-.hero-networks-svg3:hover {
-  transform: rotate(45deg);
+.hero-social:hover,
+.hero-social:focus {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 
@@ -762,7 +769,7 @@ margin-left: 9px;
  .second-title-absolute::after {
   content: '';
   display: block;
-  width: 924px;
+  width: 1030px;
 height: 2px;
 background: linear-gradient(180deg, #00FFF0 0%, #FFFFFF 100%);
  }}
