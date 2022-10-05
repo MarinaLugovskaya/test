@@ -2672,7 +2672,7 @@ margin-left: 78px;
   position: relative;
   border: none;
   top: -30px;
-  right: -70px;
+  right: -60px;
  }
 
  .rev_slider.arrows-box .slick-dots button {
@@ -2831,7 +2831,7 @@ width: 316px;
     list-style: none;
     position: absolute;
     top: -20px;
-    left: 65px;
+    left: 55px;
    }
   
    .arrows-case-box .slick-dots button {
