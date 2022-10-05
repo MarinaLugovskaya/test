@@ -2796,15 +2796,15 @@ width: 316px;
     color: white;
     top: 1px;
     left: 72px;
+
 } 
   
     #slick-slide-control12 {
     display: none;
    } 
-   #slick-slide-control13 {
+    #slick-slide-control11 {
     display: none;
-   } 
-
+   }  
 
    .arrows-case-box .slick-prev {
   background: url('./images/svg/arrow-left.svg') 0 0 / 100% no-repeat;
