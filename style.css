@@ -2086,7 +2086,7 @@ z-index: 10;
 /* --CASE SECTION-- */
 .section-case-bgc {
   background: linear-gradient(100.62deg, #512069 0%, #542278 100%);
-  padding: 86px 0 20px 0;
+  /* padding: 86px 0 20px 0; */
 
   
 }
@@ -2620,8 +2620,6 @@ transition: transform .5s cubic-bezier(.4,0,.2,1) .1s,opacity .5s cubic-bezier(.
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
-  display:flex;
-  justify-content: space-between;
 }
 
  @media screen and (min-width: 1440px) {
@@ -2647,6 +2645,7 @@ background: url('./images/svg/arrow-left.svg') 0 0 / 100% no-repeat;
 
 .arrows-box .slick-next{
 background: url('./images/svg/arrow-right.svg') 0 0 / 100% no-repeat;
+margin-left: 78px;
 }
 
 .rev_slider .arrows-box .slick-dots {
@@ -2672,8 +2671,8 @@ background: url('./images/svg/arrow-right.svg') 0 0 / 100% no-repeat;
   letter-spacing: 0.035em;
   position: relative;
   border: none;
-  top: 3px;
-  right: 100px;
+  top: -30px;
+  right: -70px;
  }
 
  .rev_slider.arrows-box .slick-dots button {
@@ -2760,6 +2759,7 @@ margin-top: 48px;
     width: 176px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
 
   @media screen and (min-width: 896px) {
@@ -2829,6 +2829,9 @@ width: 316px;
     background-color: transparent;
     margin-top: 26px;
     list-style: none;
+    position: absolute;
+    top: -20px;
+    left: 65px;
    }
   
    .arrows-case-box .slick-dots button {
@@ -2842,8 +2845,7 @@ width: 316px;
     line-height: 117%;
     text-align: center;
     letter-spacing: 0.035em;
-    position: relative;
-    top: -55px;
+  
    }
 
 /* --SLIDER RESULTS-- */
